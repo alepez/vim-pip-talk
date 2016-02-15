@@ -50,10 +50,20 @@ f": jump and land on the next quotes
 w: move forward one word
 b: move back one word
 e: move to the end of your word
-When you use uppercase you ignore some delimiters within a string that may break it into two words.
-
 W: move forward one big word
 B: move back one big word
+
+## WITHIN THE SCREEN
+
+H: move to the top of the screen
+M: move to the middle of the screen
+L: move to the bottom of the screen
+gg: go to the top of the file
+G: go to the bottom of the file
+^U: move up half a screen
+^D: move down half a screen
+^F: page down
+^B: page up
 
 ## VERBS
 
@@ -96,6 +106,39 @@ B: move back one big word
  - N: go to the previous instance when you’ve searched for a string
  - ;: go to the next instance when you’ve jumped to a character
  - ,: go to the previous instance when you’ve jumped to a character
+ - cgn: magic :)
+
+## EX MODE
+
+You can enter commands. Lot of commands.
+
+## INSERT MODE
+
+ - i: insert before the cursor
+ - a: append after the cursor
+ - I: insert at the beginning of the line
+ - A: append at the end of the line
+ - o: open a new line below the current one
+ - O: open a new line above the current one
+ - r: replace the one character under your cursor
+ - R: replace the character under your cursor, but just keep typing afterwards
+ - cm: change whatever you define as a movement, e.g. a word, or a sentence, or a paragraph.
+ - C: change the current line from where you’re at
+ - ct?: change change up to the question mark
+ - s: substitute
+ - S: substitute the entire current line
+
+## REPEAT
+
+.
+
+## COPY PASTE
+
+y: yank, followed by motion
+yy: yank line
+
+p: paste after cursor
+P: paste before cursor
 
 ## MACRO
 
