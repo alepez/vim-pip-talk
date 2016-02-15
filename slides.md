@@ -3,7 +3,6 @@
 macro
 live markdown
 vim avventure
-approccio soft con vintage 
 
 -------------------------------------------------------------------------------
 
@@ -152,18 +151,34 @@ P: paste before cursor
  - ...
 
 
-## RULE 34
+### RULE 34
 
 It it exists, there is a vim plugin about it.
 
-## RULE 35
+### RULE 35
 
 If no vim plugin is found at the moment, it will be made.
 
 
 ## TRICKS
 
-
 ### REMAPPING CAPS-LOCK
 
+:ShowImage media/screenshot33.png
 
+:ShowImage media/screenshot34.png
+
+
+## LEARN
+
+### VIMTUTOR
+
+:execute '!vimtutor'
+
+### SUBLIME VINTAGE MODE
+
+:ShowVideo 'media/Sublime Text 3 - Vintage Mode (VIM mode)-QCii7uhoehU.mkv'
+
+### VIM ADVENTURE
+
+:execute '! mplayer -fs media/screencast-20160214-200930.mp4'

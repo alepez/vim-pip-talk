@@ -5,6 +5,13 @@ endf
 
 command! -nargs=1 -complete=file ShowImage call ShowImage(<f-args>)
 
+fu! ShowVideo(filename)
+  execute '! mplayer -fs ' . a:filename
+  redraw!
+endf
+
+command! -nargs=1 -complete=file ShowVideo call ShowVideo(<f-args>)
+
 fu! ExecLine()
   normal 0ly$:0
 endf
