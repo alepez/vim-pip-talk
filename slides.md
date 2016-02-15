@@ -1,26 +1,22 @@
-### Appunti
-
-macro
-live markdown
-vim avventure
-
--------------------------------------------------------------------------------
-
 ## HELLO WORLD!
 
 :ShowImage media/ivebeenusingvim.png
 
 
-## LEARNING CURVE
+## LEARNING
+## CURVE
 
 :ShowImage media/learningcurve.png
 
 
 ## WHY VIM?
 
- - It’s ubiquitous. You don’t have to worry about learning a new editor on various boxes.
- - It’s scalable. You can use it just to edit config files or it can become your entire writing platform.
- - It’s powerful. Because it works like a language vim takes you from frustrated to demigod very quickly.
+ - It’s ubiquitous. You don’t have to worry about learning a new editor on
+   various boxes.
+ - It’s scalable. You can use it just to edit config files or it can become
+   your entire writing platform.
+ - It’s powerful. Because it works like a language vim takes you from
+   frustrated to demigod very quickly.
 
 :ShowImage media/hipster.jpg
 
@@ -141,6 +137,34 @@ P: paste before cursor
 
 ## MACRO
 
+```python
+
+    def get_output_status(self):
+        """ Get the status of the outputs.
+        :returns: 'status': list of dictionaries with the following keys: id,\
+        status, dimmer and ctimer.
+        """
+        return self.exec_action('get_output_status')
+
+    def get_thermostat_status(self):
+        """ Get the status of the thermostats.
+        :returns: global status information about the thermostats: 'thermostats_on', \
+        'automatic' and 'setpoint' and 'status': a list with status information for all \
+        thermostats, each element in the list is a dict with the following keys: \
+        'id', 'act', 'csetp', 'output0', 'output1', 'outside', 'mode'.
+        """
+        return self.exec_action('get_thermostat_status')
+
+    def get_sensor_brightness_status(self):
+        """ Get the current brightness of all sensors.
+        :returns: 'status': List of 32 bytes, 1 for each sensor.
+        """
+        return self.exec_action('get_sensor_brightness_status')
+
+```
+
+
+
 ## VIMRC
 
 
@@ -151,18 +175,19 @@ P: paste before cursor
  - ...
 
 
-### RULE 34
+## RULE 34
 
 It it exists, there is a vim plugin about it.
 
-### RULE 35
+## RULE 35
 
 If no vim plugin is found at the moment, it will be made.
 
 
 ## TRICKS
 
-### REMAPPING CAPS-LOCK
+## REMAPPING
+## CAPS-LOCK
 
 :ShowImage media/screenshot33.png
 
@@ -171,11 +196,12 @@ If no vim plugin is found at the moment, it will be made.
 
 ## LEARN
 
-### VIMTUTOR
+## VIMTUTOR
 
 :execute '!vimtutor'
 
-### SUBLIME VINTAGE MODE
+## SUBLIME
+## VINTAGE MODE
 
 :ShowVideo 'media/Sublime Text 3 - Vintage Mode (VIM mode)-QCii7uhoehU.mkv'
 
