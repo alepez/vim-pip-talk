@@ -3,11 +3,12 @@ fu! ShowImage(filename)
   redraw!
 endf
 
-fu! ShowImageUnderCursor()
-  call ShowImage(getline("."))
+command! -nargs=1 -complete=file ShowImage call ShowImage(<f-args>)
+
+fu! ExecLine()
+  normal 0ly$:0
 endf
 
-command! -nargs=1 -complete=file ShowImage call ShowImage(<f-args>)
-command! -nargs=0 ShowImageUnderCursor call ShowImageUnderCursor()
+command! -nargs=0 ExecLine call ExecLine()
 
-nnoremap <leader><CR> :ShowImageUnderCursor<CR>
+nnoremap <leader><CR> :ExecLine<CR>
