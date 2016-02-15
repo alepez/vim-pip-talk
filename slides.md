@@ -182,3 +182,9 @@ If no vim plugin is found at the moment, it will be made.
 ### VIM ADVENTURE
 
 :execute '! mplayer -fs media/screencast-20160214-200930.mp4'
+
+## MAGIC
+
+### INSTANT MARKDOWN
+
+:ShowVideo media/instantmarkdown.mp4
