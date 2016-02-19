@@ -135,6 +135,14 @@ You can enter commands. Lot of commands.
  - S: substitute the entire current line
 
 
+## COPY PASTE
+
+ - y: yank, followed by motion
+ - yy: yank line
+ - p: paste after cursor
+ - P: paste before cursor
+
+
 ## REPEAT
 
 Use the dot to repeat actions.
@@ -144,15 +152,6 @@ Use the dot to repeat actions.
 Use the semicolon to repeat motions.
 
 ;
-
-
-## COPY PASTE
-
-y: yank, followed by motion
-yy: yank line
-
-p: paste after cursor
-P: paste before cursor
 
 
 ## MACRO
@@ -226,6 +225,17 @@ If no vim plugin is found at the moment, it will be made.
 :execute '! mplayer -fs media/screencast-20160214-200930.mp4'
 
 
-### INSTANT MARKDOWN
+## INSTANT MARKDOWN
 
 :ShowVideo media/instantmarkdown.mp4
+
+
+## NEOVIM
+
+Vim has some problems:
+
+ - syncronous
+ - bad API
+ - messy source code
+
+:ShowImage media/neovim.png
