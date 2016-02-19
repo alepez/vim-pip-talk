@@ -4,7 +4,6 @@
 
 
 ## LEARNING
-## CURVE
 
 :ShowImage media/learningcurve.png
 
@@ -25,40 +24,45 @@
 
 :ShowImage media/lsi-adm-3a.jpg
 
-j: move down one line
-k: move up one line
-h: move left one character
-l: move right one character
+ - j: move down one line
+ - k: move up one line
+ - h: move left one character
+ - l: move right one character
 
 :ShowImage media/adm3a.jpg
 
-## WITHIN THE LINE
 
-0: move to the beginning of the line
-$: move to the end of the line
-^: move to the first non-blank character in the line
-t": jump to right before the next quotes
-f": jump and land on the next quotes
+## WITHIN LINES
 
-## MOVING BY WORD
+ - 0: move to the beginning of the line
+ - $: move to the end of the line
+ - ^: move to the first non-blank character in the line
+ - t": jump to right before the next quotes
+ - f": jump and land on the next quotes
 
-w: move forward one word
-b: move back one word
-e: move to the end of your word
-W: move forward one big word
-B: move back one big word
 
-## WITHIN THE SCREEN
+## MOVE BY WORD
 
-H: move to the top of the screen
-M: move to the middle of the screen
-L: move to the bottom of the screen
-gg: go to the top of the file
-G: go to the bottom of the file
-^U: move up half a screen
-^D: move down half a screen
-^F: page down
-^B: page up
+ - w: move forward one word
+ - b: move back one word
+ - e: move to the end of your word
+ - W: move forward one big word: foo.bar.beez foo.bar.beez
+ - B: move back one big word
+ - E: move to the end of one big word
+
+
+## SCREEN
+
+ - H: move to the top of the screen
+ - M: move to the middle of the screen
+ - L: move to the bottom of the screen
+ - gg: go to the top of the file
+ - G: go to the bottom of the file
+ - Ctrl-U: move up half a screen
+ - Ctrl-D: move down half a screen
+ - Ctrl-F: page down
+ - Ctrl-B: page up
+
 
 ## VERBS
 
@@ -66,6 +70,7 @@ G: go to the bottom of the file
  - c: change
  - y: yank (copy)
  - v: visually select (V for line vs. character)
+
 
 ## MODIFIERS
 
@@ -76,6 +81,7 @@ G: go to the bottom of the file
  - f: searches for that thing and lands on it
  - /: find a string (literal or regex)
 
+
 ## NOUNS
 
  - w: word
@@ -83,7 +89,9 @@ G: go to the bottom of the file
  - p: paragraph
  - t: tag (think HTML/XML)
 
-### NOUNS FOR PROGRAMMERS
+
+## BRACKETS
+## AND QUOTES
 
  - "inside double quote"
  - 'inside single quote'
@@ -91,21 +99,24 @@ G: go to the bottom of the file
 
 :e ~/workspace/bmrk/src/lib/PageDownloader.cpp
 
+
 ## SEARCH
 
  - /{string}: search for string
  - t: jump up to a character
  - f: jump onto a character
- - \*: search for other instances of the word under your cursor
+ - `*`: search for other instances of the word under your cursor
  - n: go to the next instance when you’ve searched for a string
  - N: go to the previous instance when you’ve searched for a string
  - ;: go to the next instance when you’ve jumped to a character
  - ,: go to the previous instance when you’ve jumped to a character
  - cgn: magic :)
 
+
 ## EX MODE
 
 You can enter commands. Lot of commands.
+
 
 ## INSERT MODE
 
@@ -123,9 +134,17 @@ You can enter commands. Lot of commands.
  - s: substitute
  - S: substitute the entire current line
 
+
 ## REPEAT
 
+Use the dot to repeat actions.
+
 .
+
+Use the semicolon to repeat motions.
+
+;
+
 
 ## COPY PASTE
 
@@ -134,6 +153,7 @@ yy: yank line
 
 p: paste after cursor
 P: paste before cursor
+
 
 ## MACRO
 
@@ -164,9 +184,9 @@ P: paste before cursor
 ```
 
 
-
 ## VIMRC
 
+:e ~/.vimrc
 
 ## PLUGINS
 
@@ -184,9 +204,6 @@ It it exists, there is a vim plugin about it.
 If no vim plugin is found at the moment, it will be made.
 
 
-## TRICKS
-
-## REMAPPING
 ## CAPS-LOCK
 
 :ShowImage media/screenshot33.png
@@ -194,22 +211,20 @@ If no vim plugin is found at the moment, it will be made.
 :ShowImage media/screenshot34.png
 
 
-## LEARN
-
 ## VIMTUTOR
 
 :execute '!vimtutor'
 
-## SUBLIME
-## VINTAGE MODE
+
+## ST VINTAGE
 
 :ShowVideo 'media/Sublime Text 3 - Vintage Mode (VIM mode)-QCii7uhoehU.mkv'
+
 
 ### VIM ADVENTURE
 
 :execute '! mplayer -fs media/screencast-20160214-200930.mp4'
 
-## MAGIC
 
 ### INSTANT MARKDOWN
 
