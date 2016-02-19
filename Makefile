@@ -1,2 +1,2 @@
 default:
-	vimdeck slides.md -h rectangles
+	vimdeck slides.md -h rectangles --no-indent
